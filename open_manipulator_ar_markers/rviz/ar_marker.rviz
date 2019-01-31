@@ -56,10 +56,18 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
+        ar_marker_0:
+          Value: true
+        ar_marker_241:
+          Value: true
+        ar_marker_244:
+          Value: true
+        ar_marker_255:
+          Value: true
         camera_link:
           Value: true
         end_effector_link:
-          Value: false
+          Value: true
         gripper_link:
           Value: true
         gripper_link_sub:
@@ -95,12 +103,12 @@ Visualization Manager:
         realsense_infra2_optical_frame:
           Value: false
         realsense_link:
-          Value: true
+          Value: false
         world:
           Value: true
       Marker Scale: 0.200000003
       Name: TF
-      Show Arrows: true
+      Show Arrows: false
       Show Axes: true
       Show Names: true
       Tree:
@@ -118,7 +126,14 @@ Visualization Manager:
                           realsense_link:
                             realsense_color_frame:
                               realsense_color_optical_frame:
-                                {}
+                                ar_marker_0:
+                                  {}
+                                ar_marker_241:
+                                  {}
+                                ar_marker_244:
+                                  {}
+                                ar_marker_255:
+                                  {}
                             realsense_depth_frame:
                               realsense_depth_optical_frame:
                                 {}
@@ -200,7 +215,7 @@ Visualization Manager:
       Marker Topic: /visualization_marker
       Name: Marker
       Namespaces:
-        {}
+        basic_shapes: true
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -298,25 +313,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.602870584
+      Distance: 0.745350957
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.143419325
-        Y: -0.00901145302
-        Z: 0.218966797
+        X: 0.0303544886
+        Y: -0.12201196
+        Z: 0.136127412
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.64479661
+      Pitch: 0.829796374
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.50357199
+      Yaw: 5.82857704
     Saved: ~
 Window Geometry:
   Camera:
