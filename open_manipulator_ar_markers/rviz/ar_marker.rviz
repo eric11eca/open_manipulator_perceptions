@@ -81,7 +81,7 @@ Visualization Manager:
         realsense_color_frame:
           Value: false
         realsense_color_optical_frame:
-          Value: false
+          Value: true
         realsense_depth_frame:
           Value: false
         realsense_depth_optical_frame:
@@ -93,7 +93,7 @@ Visualization Manager:
         realsense_infra2_frame:
           Value: false
         realsense_infra2_optical_frame:
-          Value: true
+          Value: false
         realsense_link:
           Value: true
         world:
@@ -298,25 +298,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.03488493
+      Distance: 0.602870584
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.168971732
-        Y: -0.0916684791
-        Z: 0.177348867
+        X: 0.143419325
+        Y: -0.00901145302
+        Z: 0.218966797
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.570202887
+      Pitch: 0.64479661
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.438591
+      Yaw: 5.50357199
     Saved: ~
 Window Geometry:
   Camera:
