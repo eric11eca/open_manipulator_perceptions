@@ -54,7 +54,7 @@
 
     <group if="$(eval camera_model == 'realsense_d435')">
       <node pkg="tf" type="static_transform_publisher" name="camera_frame_to_realsense_frame"
-        args="-0.04755 0.015 -0.10079 0 -1.57 0 end_effector_link realsense_link 10" />
+        args="-0.04775 0.0325 -0.09979 0 -1.57 0 end_effector_link realsense_link 10" />
       
       <include file="$(find realsense2_camera)/launch/rs_camera.launch">
         <arg name="camera"                value="$(arg camera_namespace)"/>
