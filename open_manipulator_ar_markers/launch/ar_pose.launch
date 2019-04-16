@@ -54,7 +54,7 @@
 
     <group if="$(eval camera_model == 'realsense_d435')">
       <node pkg="tf" type="static_transform_publisher" name="camera_frame_to_realsense_frame"
-        args="-0.04775 0.0325 -0.09979 0 -1.57 0 end_effector_link realsense_link 10" />
+        args="-0.04775 0.0175 -0.09979 0 -1.57 0 end_effector_link realsense_link 10" />
       
       <include file="$(find realsense2_camera)/launch/rs_camera.launch">
         <arg name="camera"                value="$(arg camera_namespace)"/>
@@ -62,9 +62,9 @@
       </include>
 
       <include file="$(find ar_track_alvar)/launch/pr2_indiv_no_kinect.launch">
-        <arg name="marker_size"          value="2.3" />
-        <arg name="max_new_marker_error" value="0.08" />
-        <arg name="max_track_error"      value="0.2" />
+        <arg name="marker_size"          value="2.1" />
+        <arg name="max_new_marker_error" value="0.0" />
+        <arg name="max_track_error"      value="0.0" />
         <arg name="cam_image_topic"      value="$(arg camera_namespace)/color/image_raw" />
         <arg name="cam_info_topic"       value="$(arg camera_namespace)/color/camera_info" />
         <arg name="output_frame"         value="$(arg marker_frame_id)" />
